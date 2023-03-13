@@ -11,8 +11,8 @@
     <link rel="shortcut icon" href="image/icon-house.jpg">
     <!-- ==== BOXING ==== -->
      <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <!--==== SWIPE CSS ====-->
-     <link rel="stylesheet" href="">
+    <!--==== SWIPE CSS FROM Swiperjs.com ====-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
     <!--==== CSS ====-->
     <link rel="stylesheet" href="style.css">
     <title>House</title>
@@ -21,21 +21,522 @@
 
 <body>
     <!--============== 1.HEADER ==============-->
-    <header class="header" id="header"></header>
+    <header class="header" id="header">
+        <nav class="nav container">
+            <!------------->
+            <a href="#" class="nav__logo">
+                Holux <i class="bx bxs-home-alt-2"></i>
+            </a>
+            <!------------->
+            <div class="nav__menu">
+                <ul class="nav__list">
+
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link"> <!--Scrool JS-->
+                            <i class="bx bx-home-alt-2"></i>
+                            <span>home</span>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#popular" class="nav__link">
+                            <i class="bx bx-building-house"></i>
+                            <span>Residences</span>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#value" class="nav__link">
+                            <i class="bx bx-award"></i>
+                            <span>Value</span>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link">
+                            <i class="bx bx-phone"></i>
+                            <span>Contact</span>
+                        </a>
+                    </li>
+
+
+
+                    <a href="#" class="button nav__button">
+                        Subscribe
+                    </a>
+                    
+                </ul>
+            </div>
+
+            <!-- III. Theme chang button  -->
+            <i class="bx bx-moon change-theme" id="theme-button"></i>
+            <!------------->
+        </nav>
+    </header>
+
 
     <!--============== MAIN ==============-->
-    <main class="main"></main>
+    <main class="main">
+        <!--============== 2.HOME ==============-->
+        <section class="home section" id="home">
+            <div class="home__container container grid">
+                
+                <div class="home__data">
+                    <h1 class="home__title">
+                        Discover <br> Most Suitable <br> Property
+                    </h1>
+                    <p class="home__description">
+                        Find a variety of properties that suit you very easily,
+                        forget all difficulties in finding a residence for you
+                    </p>
+                    <!------------->
+                    <form action="" class="home__search">
+                        <i class="bx bxs-map"></i>
+                        <input type="search" placeholder="Search by location..." class="home__search-input">
+                        <button class="button">Search</button>
+                    </form>
+                    <!------------->
+                    <div class="home__value">
+                        <div>
+                            <h1 class="home__value-number">
+                                9K <span>+</span>
+                            </h1>
+                            <span class="home__value-description">
+                                Premium <br> Product
+                            </span>
+                        </div>
 
-    <!--============== FOOTER ==============-->
-    <footer class="footer section"></footer>
+                        <div>
+                            <h1 class="home__value-number">
+                                9K <span>+</span>
+                            </h1>
+                            <span class="home__value-description">
+                                Happy <br> Customer
+                            </span>
+                        </div>
+
+                        <div>
+                            <h1 class="home__value-number">
+                                28K <span>+</span>
+                            </h1>
+                            <span class="home__value-description">
+                                Awards <br> Winning
+                            </span>
+                        </div>
+                    <!------------->
+                    </div>
+                </div>
+
+                <!--=================-->
+                <div class="home__images">
+                    <div class="home__orbe"></div>
+
+                    <div class="home__img">
+                        <img src="image/house_main.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <!--============== 3.LOGOS ==============-->
+    <section class="logos section">
+        <div class="logos__container container grid">
+            <div class="logos__img">
+                <img src="image/logo1.png" alt="">
+            </div>
+            <div class="logos__img">
+                <img src="image/logo2.png" alt="">
+            </div>
+            <div class="logos__img">
+                <img src="image/logo3.png" alt="">
+            </div>
+            <div class="logos__img">
+                <img src="image/logo4.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!--============== 4. POPULAR ==============-->
+    <section class="popular section" id="popular">
+        <div class="container">
+            <span class="section__subtitle">Best Choise</span>
+            <h2 class="section__title">
+                Popular Residences <span>.</span>
+            </h2>
+
+            <div class="popular__container swiper">
+                <div class="swiper-wrapper">
+                    <!--=========1========-->
+                    <article class="popular__card swiper-slide">
+                        <img src="image/house1.jpg" alt="" class="popular__img">
+
+                        <div class="popular__data">
+                            <h2 class="popular__price"><span>$</span>66,356</h2>
+                            <h3 class="popular__title">Garden City Assat</h3>
+                            <p class="popular__description">
+                                Street The Garden City Of Miraflores, Lima - Peru Av, Sol #986AV
+                            </p>
+                        </div>
+                    </article>
+                    <!--=========2========-->
+                    <article class="popular__card swiper-slide">
+                        <img src="image/house2.jpg" alt="" class="popular__img">
+
+                        <div class="popular__data">
+                            <h2 class="popular__price"><span>$</span>35,159</h2>
+                            <h3 class="popular__title">Gables Luxurious House</h3>
+                            <p class="popular__description">
+                                Street The Garden City Of Miraflores, Lima - Peru Av, Sol #986AV
+                            </p>
+                        </div>
+                    </article>
+                    <!--=========3========-->
+                    <article class="popular__card swiper-slide">
+                        <img src="image/house3.jpg" alt="" class="popular__img">
+
+                        <div class="popular__data">
+                            <h2 class="popular__price"><span>$</span>62,024</h2>
+                            <h3 class="popular__title">Luxurious City Garden</h3>
+                            <p class="popular__description">
+                                Street The Garden City Of Miraflores, Lima - Peru Av, Sol #986AV
+                            </p>
+                        </div>
+                    </article>
+                    <!--=========4========-->
+                    <article class="popular__card swiper-slide">
+                        <img src="image/house4.jpg" alt="" class="popular__img">
+
+                        <div class="popular__data">
+                            <h2 class="popular__price"><span>$</span>47,043</h2>
+                            <h3 class="popular__title">Aliva Private Garden</h3>
+                            <p class="popular__description">
+                                Street The Garden City Of Miraflores, Lima - Peru Av, Sol #986AV
+                            </p>
+                        </div>
+                    </article>
+                    <!--========5=========-->
+                    <article class="popular__card swiper-slide">
+                        <img src="image/house5.jpg" alt="" class="popular__img">
+
+                        <div class="popular__data">
+                            <h2 class="popular__price"><span>$</span>75,043</h2>
+                            <h3 class="popular__title">Garden Orchard City</h3>
+                            <p class="popular__description">
+                                Street The Garden City Of Miraflores, Lima - Peru Av, Sol #986AV
+                            </p>
+                        </div>
+                    </article>
+                    <!--========6=========-->
+                    <article class="popular__card swiper-slide">
+                        <img src="image/house6.jpg" alt="" class="popular__img">
+
+                        <div class="popular__data">
+                            <h2 class="popular__price"><span>$</span>90,876</h2>
+                            <h3 class="popular__title">Kusuma 2A</h3>
+                            <p class="popular__description">
+                                Street The Garden City Of Miraflores, Lima - Peru Av, Sol #986AV
+                            </p>
+                        </div>
+                    </article>
+                </div>
+                <!--========FROM Swiperjs.com=========-->
+                <div class="swiper-button-next">
+                    <i class="bx bx-chevron-right"></i>
+                </div>
+                <div class="swiper-button-prev">
+                    <i class="bx bx-chevron-left"></i>
+                </div>
+                <!--==================================-->
+            </div>
+        </div>
+    </section>
+
+    <!--============== 5. VALUE ==============-->
+    <section class="value section" id="value">
+        <div class="value__container container grid">
+            <!--=======LEFT==========-->
+            <div class="value__images">
+                <div class="value__orbe"></div>
+
+                <div class="value__img">
+                    <img src="image/value1.jpg" alt="">
+                </div>
+            </div>
+            <!--=======RIGHT==========-->
+            <div class="value__content">
+                <div class="value__data">
+                    <span class="section__subtitle">Our Value</span>
+                    <h2 class="section__title">
+                        Value We Give To You <span>.</span>
+                    </h2>
+                    <p class="value__description">
+                        We always ready to help by providing the best service for you.
+                        We believe a good place to live can make you life better.
+                    </p>
+                </div>
+
+                <div class="value__accordion">
+                    <!--=======1==========-->
+                    <div class="value__accordion-item">
+                        <header class="value__accordion-header">
+                            <i class="bx bxs-shield-x value__accordion-icon"></i>
+                            <h3 class="value__accordion-title">Best interest rates on the market</h3>
+                            <div class="value__acordion-arrow">
+                                <i class="bx bxs-down-arrow"></i>
+                            </div>
+                        </header>
+
+                        <div class="value__accordion-content">
+                            <p class="value__accordion-desciption">
+                                Price we provides is the best for you,
+                                we guarantee no price changes on your property due
+                                to various unexpected costs that may come.
+                            </p>
+                        </div>
+                    </div>
+                    <!--=======2==========-->
+                    <div class="value__accordion-item">
+                        <header class="value__accordion-header">
+                            <i class="bx bxs-x-square value__accordion-icon"></i>
+                            <h3 class="value__accordion-title">Prevent unstable prices</h3>
+                            <div class="value__acordion-arrow">
+                                <i class="bx bxs-down-arrow"></i>
+                            </div>
+                        </header>
+
+                        <div class="value__accordion-content">
+                            <p class="value__accordion-desciption">
+                                Price we provides is the best for you,
+                                we guarantee no price changes on your property due
+                                to various unexpected costs that may come.
+                            </p>
+                        </div>
+                    </div>
+                    <!--=======3==========-->
+                    <div class="value__accordion-item">
+                        <header class="value__accordion-header">
+                            <i class="bx bxs-bar-chart-square value__accordion-icon"></i>
+                            <h3 class="value__accordion-title">Best prices on the market</h3>
+                            <div class="value__acordion-arrow">
+                                <i class="bx bxs-down-arrow"></i>
+                            </div>
+                        </header>
+
+                        <div class="value__accordion-content">
+                            <p class="value__accordion-desciption">
+                                Price we provides is the best for you,
+                                we guarantee no price changes on your property due
+                                to various unexpected costs that may come.
+                            </p>
+                        </div>
+                    </div>
+                    <!--=======4==========-->
+                    <div class="value__accordion-item">
+                        <header class="value__accordion-header">
+                            <i class="bx bxs-check-square value__accordion-icon"></i>
+                            <h3 class="value__accordion-title">Security of your data</h3>
+                            <div class="value__acordion-arrow">
+                                <i class="bx bxs-down-arrow"></i>
+                            </div>
+                        </header>
+
+                        <div class="value__accordion-content">
+                            <p class="value__accordion-desciption">
+                                Price we provides is the best for you,
+                                we guarantee no price changes on your property due
+                                to various unexpected costs that may come.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!--============== 6. CONTACT ==============-->
+    <section class="contact section" id="contact">
+        <div class="contact__container container grid">
+            <!--=======LEFT==========-->
+            <div class="contact__images">
+                <div class="contact__orbe"></div>
+
+                <div class="contact__img">
+                    <img src="image/contact1.jpg" alt="">
+                </div>
+            </div>
+            <!--=======RIGHT==========-->
+            <div class="contact__content">
+                <!--============-->
+                <div class="contact__data">
+                    <span class="section__subtitle">Contact Us</span>
+                    <h2 class="section__title">
+                        Easy to Contact us <span>.</span>
+                    </h2>
+                    <p class="contact__description">
+                        Is there a problem finding your dream home? Need a
+                        huide in buying first home? or need a consultation
+                        on residential issues? just contact us.
+                    </p>
+                </div>
+                <!--============-->
+                <div class="contact__card">
+                    <!--=======1=======-->
+                    <div class="contact__card-box"> 
+                        <div class="contact__card-info">
+                            <i class="bx bxs-phone-call"></i>
+
+                            <div>
+                                <h3 class="contact__card-title">Call</h3>
+                                <p class="contact__card-description">022.321.165.19</p>
+                            </div>
+                        </div>
+                        
+                        <button class="button contact__card-button">Call Now</button>
+                    </div>
+                    <!--=======2=======-->
+                    <div class="contact__card-box"> 
+                        <div class="contact__card-info">
+                            <i class="bx bxs-message-rounded-dots"></i>
+
+                            <div>
+                                <h3 class="contact__card-title">Chat</h3>
+                                <p class="contact__card-description">022.321.165.19</p>
+                            </div>
+                        </div>
+                        
+                        <button class="button contact__card-button">Chat Now</button>
+                    </div>
+                    <!--=======3=======-->
+                    <div class="contact__card-box"> 
+                        <div class="contact__card-info">
+                            <i class="bx bxs-video"></i>
+
+                            <div>
+                                <h3 class="contact__card-title">Video Call</h3>
+                                <p class="contact__card-description">022.321.165.19</p>
+                            </div>
+                        </div>
+                        
+                        <button class="button contact__card-button">Video Call Now</button>
+                    </div>
+                    <!--=======4=======-->
+                    <div class="contact__card-box"> 
+                        <div class="contact__card-info">
+                            <i class="bx bxs-envelope"></i>
+
+                            <div>
+                                <h3 class="contact__card-title">Message</h3>
+                                <p class="contact__card-description">022.321.165.19</p>
+                            </div>
+                        </div>
+                        
+                        <button class="button contact__card-button">Message</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!--============== 7. SUBSCRIBE ==============-->
+    <section class="subscribe section">
+        <div class="subscribe__container container">
+            <h1 class="subscribe__title">Get Started with Holux</h1>
+            <p class="subscribe__description">
+                Subscribe and find super attractive price
+                quotes from us, find your residence soon
+            </p>
+            <a href="#" class="button subscribe__button">Get Started</a>
+        </div>
+    </section>
+
+    <!--============== 8. FOOTER ==============-->
+    <footer class="footer section">
+
+        <!--=====TOP=======-->
+        <div class="footer__container container grid">
+
+            <div>
+                <a href="#" class="footer__logo">
+                    Holux <i class="bx bxs-home-alt-2"></i>
+                </a>
+                <p class="footer__description">
+                    Our vision is to make all pople <br>
+                    the best place to live for them.
+                </p>
+            </div>
+
+            <!--============-->
+            <div class="footer__content">
+                <!--=======1=======-->
+                <div>
+                    <h3 class="footer__title">About</h3>
+                    <ul class="footer__links">
+                        <li><a href="#" class="footer__link">About Us</a></li>
+                        <li><a href="#" class="footer__link">Features</a></li>
+                        <li><a href="#" class="footer__link">News & Blog</a></li>
+                    </ul>
+                </div>
+                <!--=======2=======-->
+                <div>
+                    <h3 class="footer__title">Company</h3>
+                    <ul class="footer__links">
+                        <li><a href="#" class="footer__link">How We Work?</a></li>
+                        <li><a href="#" class="footer__link">Capital</a></li>
+                        <li><a href="#" class="footer__link">Security</a></li>
+                    </ul>
+                </div>
+                <!--=======3=======-->
+                <div>
+                    <h3 class="footer__title">Support</h3>
+                    <ul class="footer__links">
+                        <li><a href="#" class="footer__link">FAQs</a></li>
+                        <li><a href="#" class="footer__link">Support center</a></li>
+                        <li><a href="#" class="footer__link">Contact Us</a></li>
+                    </ul>
+                </div>
+                <!--=======4=======-->
+                <div>
+                    <h3 class="footer__title">Follow Us</h3>
+                    <ul class="footer__social">
+                        <a href="https://www.facebook.com/" target='_blank' class="footer__social-link">   <i class="bx bxl-facebook-circle"></i>  </a>
+                        <a href="https://www.instagram.com/" target='_blank' class="footer__social-link">  <i class="bx bxl-instagram-alt"></i>    </a>
+                        <a href="https://id.pinterest.com/" target='_blank' class="footer__social-link">   <i class="bx bxl-pinterest"></i>        </a>
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
+
+    <!--============== 9. SCROOL UP ==============-->
+        <a href="#" class="scrollup" id="scroll-up">
+            <i class="bx bx-chevrons-up"></i>
+        </a>
+
+
+
+        <!--=====BOTOM=======-->
+        <div class="footer__info container">
+            <span class="footer__copy">&#169; Bedimcode. All rights reserved</span>
+            <div class="footer__privacy">
+                <a href="#">Terms & Agreements</a>
+                <a href="#">Privacy Policy</a>
+            </div>
+        </div>
+    </footer>
 
 
 
 
-    <!--==== SCROLE REVERAL ====-->
-
-    <!--==== SWIPER JS ====-->
-    <script></script>
+    <!--==== SCROLE REVERAL From Scrollrevealjs.org====-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!--==== SWIPER JS FROM Swiperjs.com====-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <!--==== MAIN JS ====-->
     <script src="main.js"></script>
 </body>
